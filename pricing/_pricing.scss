@@ -1,0 +1,76 @@
+.pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-left: 282px;
+    padding-right: 292px;
+    .pricing__block1 {
+        .block1__text1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 55px; 
+            line-height: 65.5px;          
+            letter-spacing: 0.2px;
+            color: #ffffff;
+            margin-bottom: 26px;
+        }
+        .block1__text2 {
+            @include feature__items1-text;
+
+        }
+
+    }
+    .pricing__block2 {
+        .block2__text1 {
+            @include feature__text3;
+            margin-bottom: 16.5px;
+        }
+        .block2__text2 {
+            display: flex;
+            flex-direction: row;
+            #ten {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-size: 55px; 
+                line-height: 65.5px;          
+                letter-spacing: 0.2px;
+                color: #ffffff;
+                margin-bottom: 16px;                
+            }
+            #Month {
+                @include feature__text3;              
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+        }
+        .block2__text3 {
+            @include feature__text3;
+            margin-bottom: 19px;
+        }
+        .block2__button {
+            #pricing__button1 {
+                text-decoration: none;
+                #pricing__button1-1 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #2091f9;
+                    min-height: 54px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #ffffff;
+                    padding: 18px 38px;
+                    cursor: pointer;
+                    border-radius: 30px 30px;
+                    border: none; 
+                    margin-bottom: 100px;
+                }
+
+            }
+
+        }
+
+    }
+}

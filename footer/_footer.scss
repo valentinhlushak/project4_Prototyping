@@ -1,0 +1,97 @@
+@mixin list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px; 
+    line-height: 27px;          
+    letter-spacing: 0.2px;
+    color: #ffffff;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 117px 212px 131px 202px;
+    .footer__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap:91px;
+        grid-row-gap:16px;
+        @include list;
+        .footer__list1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 22px; 
+            line-height: 33px;          
+            letter-spacing: 0.1px;
+        }
+        .footer__list2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 22px; 
+            line-height: 33px;          
+            letter-spacing: 0.1px;
+        }
+        .footer__list3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 22px; 
+            line-height: 33px;          
+            letter-spacing: 0.1px;
+        }
+    }
+    .footer__item {
+        .footer__item1 {
+            display: flex;
+            flex-direction: row;
+            .footer__item1-1 {
+                margin-right: 32.33px;
+            }
+            .footer__item1-2 {
+                margin-right: 32.96px;
+            }
+        }
+        .footer__item2 {
+            @include feature__text1;
+            margin-top: 33.48px;
+        }
+        .footer__item3 {
+            @include feature__items1-text;
+            margin-top: 5px;
+        }
+        .footer__item4 {
+            width: 353px;
+            border: 1px solid #e8e8e8;
+            background-color: #f4f4f4;
+            padding: 19px 35px 19px 36px;
+            border-radius: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 14px; 
+            line-height: 16px;          
+            letter-spacing: 0.1px;
+            color: #18171d;
+            margin-top: 29px;
+            box-sizing: border-box;
+        }
+        .footer__item5 {
+            text-decoration: none;
+            #footer__button1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #2091f9;
+                min-height: 54px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #ffffff;
+                padding: 19px 38px;
+                cursor: pointer;
+                border-radius: 30px 30px;
+                border: none;
+                margin-top: 12px;
+                width: 353px;
+                box-sizing: border-box;
+            }
+        }
+    }
+}
